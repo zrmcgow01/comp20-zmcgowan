@@ -1,12 +1,17 @@
+body{
+	background: white;
+}
+
+@media all and (min-width:992px) {
+body{	
+		background-image: url('omfgdogs.gif');
+	}
+}
+
 #link{
 	font-weight: bold;
 	font-family: "Impact";
 	margin-top: 100%;
 	margin-left: 75%;
 	color: rgb(255, 255, 230);
-}
-
-body{	
-	background-image: url('omfgdogs.gif');
-	min-width: 992px;
 }
