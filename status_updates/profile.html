@@ -6,18 +6,36 @@
 <head>
 <title>Fecesbook</title>
 <script>
+
+
 function printMessage()
 {
-var name=document.getElementById("msg");
-
-var newP = document.createElement("p");
+var dateinfo = new Date();
+var month = 1 + dateinfo.getMonth();
+var day = dateinfo.getDate();
+var year = dateinfo.getUTCFullYear();
+var hour = dateinfo.getHours();
+var minutes = dateinfo.getMinutes();
+var name = document.getElementById("msg");
 var content = document.createTextNode(name.value);
-newP.appendChild(content);
+content.textContent = month+"/"+day+"/"+year+" "+hour+":"+minutes+" - "+content.textContent;
 statDiv = document.getElementById("status");
-document.body.insertBefore(newP, statDiv);
+
+var newP = document.createElement("div");
+newP.appendChild(content);
+
+if(!statDiv.hasChildNodes()){
+	statDiv.appendChild(newP);
+}
+
+else{
+	var childone = statDiv.firstChild;
+	statDiv.insertBefore(newP, childone);
+}
 
 name.value="";
 }
+
 </script>
 </head>
 
