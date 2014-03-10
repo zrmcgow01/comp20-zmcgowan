@@ -15,21 +15,7 @@ var mapOptions = {
 var marker; //do I need?
 var places; //do i need?
 
-function init(){
-	console.log("I'm here");
-	map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
-	if(navigator.geolocation) {
-		navigator.geolocation.getCurrentPosition(function(position){
-		lat = position.coords.latitude;
-		lon = position.coords.longitude;
-		displayMap();
-		});
-	}
-	else {
-		alert("Geolocation is not supported by this browser.");
-		}
-}
-
+console.log("I'm here");
 
 function displayMap(){
 	console.log("I'm here");
@@ -48,6 +34,23 @@ function displayMap(){
 	//	infoWindow.setContent(marker.title);
 	//	infoWindow.open(map, marker);
 	//});
-	
-	
+		
 }
+
+function init(){
+	console.log("I'm here");
+	map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+	var options = {timeout:60000};
+	if(navigator.geolocation) {
+		navigator.geolocation.getCurrentPosition(function(position){
+		lat = position.coords.latitude;
+		lon = position.coords.longitude;
+		displayMap();
+		}, NIL,options);
+	}
+	else {
+		alert("Geolocation is not supported by this browser.");
+		}
+}
+
+
