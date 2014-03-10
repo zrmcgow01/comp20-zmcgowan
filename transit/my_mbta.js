@@ -2,6 +2,7 @@
 var map; //global variable for Google map
 var lat = 0; //initialize latitiude variable
 var lon = 0; //initialize longitude variable
+var request = new XMLHttpRequest(); //do I need?
 var infoWindow = new google.maps.InfoWindow(); //this will be filled
 						//with information about the appropriate station
 var myLocation = new google.maps.LatLng(lat, lon);
@@ -11,8 +12,11 @@ var mapOptions = {
 					mapTypeId: google.maps.MapTypeId.ROADMAP
 				};
 				
+var marker; //do I need?
+var places; //do i need?
 
 function init(){
+	console.log("I'm here");
 	map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
 	if(navigator.geolocation) {
 		navigator.geolocation.getCurrentPosition(function(position){
@@ -28,14 +32,16 @@ function init(){
 
 
 function displayMap(){
+	console.log("I'm here");
 	myLocation = new google.maps.LatLng(lat, lon);
 	
 	map.panTo(myLocation);
-	console.log("I'm here");
+
 	marker = new google.maps.Marker({
 		position: myLocation,
 		title: "I am here!"
 	});
+	
 	marker.setMap(map);
 	
 	//google.maps.event.addListener(marker, 'click', function() {
