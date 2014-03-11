@@ -75,6 +75,7 @@ function parse_stations(){
 		console.log("json file properly opened");
 		data = JSON.parse(xhr.responseText);
 		scheduleDom = document.getElementById("schedule");
-		scheduleDom.innerHTML = data[1]["line"];
+		//scheduleDom.innerHTML = data[1]["line"];
+		scheduleDom.innerHTML = "help me";
 	}
 }	
