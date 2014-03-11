@@ -1,4 +1,3 @@
-//My Javascript function code here....
 var map; //global variable for Google map
 var lat = 0; //initialize latitiude variable
 var lon = 0; //initialize longitude variable
@@ -50,6 +49,4 @@ function displayMap(){
 	//	infoWindow.setContent(marker.title);
 	//	infoWindow.open(map, marker);
 	//});
-	
-	
 }
