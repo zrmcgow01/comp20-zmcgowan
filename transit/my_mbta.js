@@ -65,7 +65,7 @@ function parse_json(){
 	console.log("hi");
 	var sample = 6;
 	xhr = new XMLHttpRequest();
-	xhr.open("get", 'https://github.com/tuftsdev/comp20-zmcgowan/blob/master/transit/stations.json', true);
+	xhr.open("get", 'https://github.com/tuftsdev/comp20-zmcgowan/transit/stations.json', true);
 	xhr.onreadystatechange = parse_stations;
 	xhr.send(null);
 }
@@ -79,3 +79,4 @@ function parse_stations(){
 		scheduleDom.innerHTML = "help me";
 	}
 }	
+
