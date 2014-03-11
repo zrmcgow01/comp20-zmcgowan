@@ -63,6 +63,7 @@ function dataReady(){
 }
 
 function parse_json(){
+	console.log("hi");
 	xhr = new XMLHttpRequest();
 	xhr.open("get", "/stations.json", true);
 	xhr.onreadystatechange = parse_stations;
