@@ -1,6 +1,6 @@
 var map; //global variable for Google map
-var lat = 0; //initialize latitiude variable
-var lon = 0; //initialize longitude variable
+var lat = 42.3581; //initialize latitiude variable
+var lon = -71.0636; //initialize longitude variable
 var request = new XMLHttpRequest(); //do I need?
 var infoWindow = new google.maps.InfoWindow(); //this will be filled
 						//with information about the appropriate station
