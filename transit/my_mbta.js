@@ -59,7 +59,6 @@ function dataReady(){
 		scheduleDom.innerHTML = '<p>Loading the data has failed. Please try again</p>';
 	
 				}
-	}
 }
 
 function parse_json(){
