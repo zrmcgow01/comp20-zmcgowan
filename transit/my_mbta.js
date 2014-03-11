@@ -17,6 +17,7 @@ var places; //do i need?
 
 
 function init(){
+	console.log("got here");
 	map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
 	
 	if(navigator.geolocation) {
