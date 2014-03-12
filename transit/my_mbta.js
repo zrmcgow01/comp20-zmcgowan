@@ -65,13 +65,15 @@ function parse_json(){
 	console.log("hi");
 	var sample = 6;
 	xhr = new XMLHttpRequest();
-	xhr.open("get", 'https://github.com/tuftsdev/comp20-zmcgowan/transit/stations.json', true);
+	xhr.open("get", 'https://github.com/tuftsdev/comp20-zmcgowan/transit/stations.json', false);
 	xhr.onreadystatechange = parse_stations;
+	console.log(sample);
 	xhr.send(null);
 }
 
 function parse_stations(){
 	if(xhr.readyState==4 && xhr.status == 200) {
+		console.log("got here");
 		console.log("json file properly opened");
 		data = JSON.parse(xhr.responseText);
 		scheduleDom = document.getElementById("schedule");
