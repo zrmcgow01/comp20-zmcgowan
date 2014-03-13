@@ -10,7 +10,25 @@ body {
 	 padding: 0px;
 }
 
-#map_canvas {
+#map-canvas {
 	height: 100%;
 	width:  100%;	
+}
+
+#schedule{
+	border-color: black;
+	border-width: 2px;
+	border-style: solid;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#schedule tr th, td {
+	border-right-color: black;
+	border-bottom-color: black;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	text-align: left;
 }
