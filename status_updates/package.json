@@ -15,5 +15,9 @@
     "heroku"
   ],
   "author": "Zach McGowan",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "logfmt": "^1.1.2",
+    "express": "^3.5.1"
+  }
 }
