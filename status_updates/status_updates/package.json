@@ -1,0 +1,23 @@
+{
+  "name": "hello_world_example",
+  "version": "0.0.0",
+  "description": "Node example for lab 7 on status_updates",
+  "main": "web.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tuftsdev/comp20-zmcgowan/tree/master/status_updates"
+  },
+  "keywords": [
+    "example",
+    "heroku"
+  ],
+  "author": "Zach McGowan",
+  "license": "MIT",
+  "dependencies": {
+    "logfmt": "^1.1.2",
+    "express": "^3.5.1"
+  }
+}

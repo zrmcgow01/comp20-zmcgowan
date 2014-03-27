@@ -6,8 +6,3 @@ along with the date and time (exact formatting is specified in the lab
 assignment page).  This assignment was completed on 2/20/14.
 
 -Zach McGowan
-
-Updates made on 3/27/14 for lab 7.  For part 2 of lab, the Heroku
-URL for my Node.js app, named web.js, is:
-http://hidden-hollows-7703.herokuapp.com
-
