@@ -1,4 +1,4 @@
-
+<!--This file is for lab 5/7-->
 <!DOCTYPE html>
 
 <html>
@@ -10,36 +10,62 @@
 
 function printMessage()
 {
-var dateinfo = new Date();
-var month = 1 + dateinfo.getMonth();
-var day = dateinfo.getDate();
-var year = dateinfo.getUTCFullYear();
-var hour = dateinfo.getHours();
-var minutes = dateinfo.getMinutes();
-var name = document.getElementById("msg");
-var content = document.createTextNode(name.value);
-content.textContent = month+"/"+day+"/"+year+" "+hour+":"+minutes+" - "+content.textContent;
-statDiv = document.getElementById("status");
+	//var MSG = document.getElementById("msg").value;
+	var dateinfo = new Date();
+	var month = 1 + dateinfo.getMonth();
+	var day = dateinfo.getDate();
+	var year = dateinfo.getUTCFullYear();
+	var hour = dateinfo.getHours();
+	var minutes = dateinfo.getMinutes();
+	var name = document.getElementById("msg");
+	var content = document.createTextNode(name.value);
+	content.textContent = month+"/"+day+"/"+year+" "+hour+":"+minutes+" - "+content.textContent;
+	localStorage[new Date().getTime()] = content.textContent;
 
-var newP = document.createElement("div");
-newP.appendChild(content);
+	statDiv = document.getElementById("status");
 
-if(!statDiv.hasChildNodes()){
-	statDiv.appendChild(newP);
+	for(key in localStorage){
+		var record = document.createTextNode(localStorage[key]);
+		var newP = document.createElement("div");
+		newP.appendChild(record);
+
+		if(!statDiv.hasChildNodes()){
+			statDiv.appendChild(newP);
+		}
+
+		else{
+			var childone = statDiv.firstChild;
+			statDiv.insertBefore(newP, childone);
+		}
+	}
+
+	name.value="";
 }
 
-else{
-	var childone = statDiv.firstChild;
-	statDiv.insertBefore(newP, childone);
-}
+function init()
+{
+	statDiv = document.getElementById("status");
+	console.log("getting into init");
+	for(key in localStorage){
+		var record = document.createTextNode(localStorage[key]);
+		var newP = document.createElement("div");
+		newP.appendChild(record);
 
-name.value="";
+		if(!statDiv.hasChildNodes()){
+			statDiv.appendChild(newP);
+		}
+
+		else{
+			var childone = statDiv.firstChild;
+			statDiv.insertBefore(newP, childone);
+		}
+	}
 }
 
 </script>
 </head>
 
-<body>
+<body onload="init()">
 	<h1>Fecebook</h1>
 	<div id="nav">
 		<ul>
