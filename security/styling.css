@@ -1,0 +1,47 @@
+h1{
+	text-align: center;
+	font-family: 'Monaco' ;
+	border-bottom: 4px outset;
+	border-bottom-color: blue;
+	background-color: rgb(143, 188, 205);
+}
+
+.author{
+	text-align: center;
+}
+
+h2{
+	color: blue;
+	font-family: Impact, Charcoal, sans-serif;
+}
+
+h3{
+	text-align: center;
+	color: purple;
+}
+
+.code{
+	text-align: left;
+}
+
+p{
+	text-indent: 50px;
+}
+
+.code{
+	text-align: left;
+}
+
+body{
+	background-color:#ff8080;
+}
+
+.images img{
+	display:block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#uri{
+		font-style: italic;	
+}
