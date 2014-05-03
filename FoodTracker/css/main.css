@@ -1,0 +1,118 @@
+body {
+	background-color: #fca755;
+}
+
+#icon {
+	display:block;
+	margin-left: auto;
+	margin-right:auto;
+	margin-top:75px;
+	margin-bottom: 50px;
+}
+
+#weeklyChartDiv{
+	display:block;
+	margin-top: 50px;
+	margin-bottom:50px;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+#monthlyChartDiv{
+	display:block;
+	margin-top: 50px;
+	margin-bottom:50px;
+	margin-left: auto;
+	margin-right:auto;
+}
+.total {
+	height:50px;
+	width:350px;
+	border-radius: 15px; 
+	background-color: #3FA3BB;
+	margin-left: auto;
+	margin-right:auto;
+	text-align: center;
+	padding-top: 10px;
+	font-size: 20px;
+	color:white;
+	font-family: 'Lato':serif;
+	box-shadow: 3px 3px 3px gray;
+}
+
+#yearlyChartDiv{
+	display:block;
+	margin-top:50px;
+	margin-bottom:50px;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+#tableDiv{
+	display:block;
+	margin-top: 50px;
+	margin-bottom:50px;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+#expenseTable{
+	border: 1px solid black;
+	width: 600px;
+	border-collapse:collapse;
+	margin-top: 50px;
+	margin-bottom:50px;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+#titleRow{
+	border: 1px solid black;
+	border-collapse:collapse;
+}
+
+#evenRow{
+	border: 1px solid black;
+	border-collapse:collapse;
+	text-align: center;
+	font-style: bold;
+	background: #3FA3BB;
+	color: white;
+}
+
+#oddRow{
+	border: 1px solid black;
+	border-collapse:collapse;
+	font-style: bold;
+	text-align: center;
+	background: white;
+	color: #3FA3BB;
+}
+
+#titleRow{
+	border: 1px solid black;
+	font-size: 150%;
+	font-family: sans-serif;
+	border-collapse:collapse;
+	font-style: bold;
+	text-align: center;
+	background: #3FA3BB;
+	color: white;
+}
+
+#topLeftIcon{
+	display:block;
+	height:40px;
+	width:auto;
+}
+
+#navbar{
+	background-color: #fca755;
+}
+
+.chartHeader{
+	font-size: 80px;
+	color:white;
+	font-family: 'Lobster', cursive;
+	text-align: center;
+}

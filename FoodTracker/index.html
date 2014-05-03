@@ -1,0 +1,81 @@
+<!--root file for food tracker app-->
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Food Tracker</title>	
+	
+
+
+	<!--links to jquery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<!--include bootstrap-->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<!--scripts/css for plotting-->
+	<script type="text/javascript" src="js/jquery.jqplot.js"></script>
+	<script type="text/javascript" src="js/jquery.jqplot.min.js"></script>
+	<script type="text/javascript" src="js/jqplot.barRenderer.min.js"></script>
+	<script type="text/javascript" src="js/jqplot.categoryAxisRenderer.min.js"></script>
+	<script type="text/javascript" src="js/jqplot.pointLabels.min.js"></script>
+	<link href="css/jquery.jqplot.css" rel="stylesheet" type ="text/css">
+	<!--links to main css-->
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<!--bootstrap-->
+	<link href="css/main.css" rel="stylesheet" type="text/css">	
+	 	<!--install Lato Font-->
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lobster">
+	<!--main scripting source-->
+	<script type="text/javascript" src="js/main.js"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+
+
+</head>
+<!--load week expenses chart on page opening-->
+<body onload="createWeekChart()" >
+	
+
+<!--fixed bootstrap navbar-->
+	<nav class="nav nav-pills navbar-fixed-top" id= "navbar">
+		<li><img src="img/foodTrackerIcon.jpg" alt="image cannot be displayed" id ="topLeftIcon"></li>
+	  <li onclick ="scrollWeek()"><a href="#">This Week</a></li>
+	  <li onclick ="scrollMonth()"><a href="#">This Month</a></li>
+	  <li onclick ="scrollYear()"><a href="#">This Year</a></li>
+	  <li onclick ="scrollTable()"><a href="#">Total Expenditures</a></li>
+	</nav>
+
+	<img src="img/foodTrackerIcon.jpg" alt="image cannot be displayed" id ="icon">
+	
+
+	<div class="chartHeader" id="thisWeek"> This Week </div>
+	<div class="total" id="week">   </div>
+	<div class="chartClass">
+		<div id= "weeklyChartDiv" style = "height:400px;width:600px;"></div>
+	</div>
+
+	<div class="chartHeader" id="thisMonth"> This Month </div>
+	<div class="total" id="thismonth">   </div>
+	<br>
+	<div class="total" id="lastmonth">   </div>
+	<div class="chartClass">
+		<div id= "monthlyChartDiv" style = "height:400px; width:600px;"></div>
+	</div>
+
+	<div class="chartHeader" id="thisYear"> This Year </div>
+	<div class="total" id="year">   </div>
+	<div class="chartClass">
+		<div id= "yearlyChartDiv" style = "height:400px; width:600px;"></div>
+	</div>
+
+	<div class="chartHeader" id="totalExpenditures"> Total Expenditures </div>
+	<div class="chartClass">
+		<div id= "tableDiv">
+			<table id="expenseTable">
+			</table>
+		</div>
+	</div>
+
+
+</body>
+</html>

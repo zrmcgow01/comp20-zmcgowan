@@ -1,0 +1,41 @@
+Comp 20 - Semester Group Project
+March 13, 2014
+
+Project title
+
+- Food Tracker 
+
+Problem statement (i.e., what is the problem?)
+
+- Particularly for college students, tracking personal expenditures such as food and groceries can be a challenge. 
+
+How do you solve the problem?
+
+	- Send a text to number issued by Twilio with each expense
+- Site will graph daily, monthly and yearly expenditures
+- Site will have a log of all texts sent
+- Log categories will include:
+-Date, Time, Amount, & Comment   
+   
+List of all the features that your team will implement (including which of the "Pick 5" items were chosen by the team). Your team will be held accountable for the features you list:
+- SMS (using Twilio or other text service)
+- Reporting with charts
+- Data scraping
+- Front-end framework using Bootstrap or similar framework software
+- Cloud data storage via Twilio
+
+
+What data will your prototype be using and collecting:
+
+- Our prototype will collect data on personal expenditures relating to food and groceries.  
+- More specifically, the prototype will receive a text message with the dollar amount of the expenditure, the location where the expenditure took place, the time and date of the entry, and an optional memo to accompany the entry. 
+- All of this data will be collected and used to display a running monthly total of spending as well as offer a monthly comparison of spending.
+
+Any algorithms or special techniques that will be necessary
+
+	- Sorting algorithms to organize data based on week or month.
+	- Hashing algorithms to store login info
+	- jQuery will be used to display charts/graphs
+	- 
+Electronic mockups of what your team will be developing usingwireframes. No hand-drawn mockups accepted.
+	- Available in .pdf called "wireframe"

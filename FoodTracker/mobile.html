@@ -1,0 +1,65 @@
+<!--root file for food tracker app-->
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Food Tracker</title>	
+	
+
+<script type ="text/javascript">
+if(screen.width <= 699){
+	document.location = "mobile.html";
+}
+</script>
+
+
+	<!--links to jquery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<!--include bootstrap-->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<!--scripts/css for plotting-->
+	<script type="text/javascript" src="js/jquery.jqplot.js"></script>
+	<script type="text/javascript" src="js/jquery.jqplot.min.js"></script>
+	<script type="text/javascript" src="js/jqplot.barRenderer.min.js"></script>
+	<script type="text/javascript" src="js/jqplot.categoryAxisRenderer.min.js"></script>
+	<script type="text/javascript" src="js/jqplot.pointLabels.min.js"></script>
+	<link href="css/jquery.jqplot.css" rel="stylesheet" type ="text/css">
+	<!--links to main css-->
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<!--bootstrap-->
+	<link href="css/main.css" rel="stylesheet" type="text/css">	
+	 	<!--install Lato Font-->
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lobster">
+	<!--main scripting source-->
+	<script type="text/javascript" src="js/main.js"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+
+
+</head>
+<!--load week expenses chart on page opening-->
+<body onload="createWeekChart()">
+	
+
+	<img src="img/foodTrackerIcon.jpg" alt="image cannot be displayed" id ="icon">
+	
+
+	<div class="chartHeader" id="thisWeek"> This Week </div>
+	<div class="total" id="week">   </div>
+	
+
+	<div class="chartHeader" id="thisMonth"> This Month </div>
+	<div class="total" id="thismonth">   </div>
+	<br>
+	<div class="total" id="lastmonth">   </div>
+	
+
+	<div class="chartHeader" id="thisYear"> This Year </div>
+	<div class="total" id="year">   </div>
+	
+
+
+
+</body>
+</html>
